@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MEDLINK | Pharmacy to Primary Health Care Services</title>
+<meta name="description" content="MEDLINK helps Filipino pharmacy operators transform their businesses into UHC-GAMOT facilities, expanding access to primary health care." />
+<link rel="icon" href="sources/images/med_logo.jpg" type="image/jpeg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="sources/style.css">
+</head>
+<body class="bg-white text-ink antialiased">     
+
+<!-- ============ HEADER / NAV ============ -->
+<header id="siteHeader" class="fixed top-0 inset-x-0 z-50 transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
+    <a href="#top" class="flex items-center gap-2.5">
+      <img src="sources/images/med_logo.jpg" alt="MEDLINK Logo" class="w-8 h-8 rounded-full object-cover" />
+      <span class="font-display text-white text-2xl tracking-tight">MEDLINK</span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-9 text-sm font-medium text-white/85">
+      <a href="#mission" class="hover:text-teal-light transition-colors">Mission</a>
+      <a href="#pathway" class="hover:text-teal-light transition-colors">The Pathway</a>
+      <a href="#services" class="hover:text-teal-light transition-colors">Services</a>
+      <a href="#contact" class="ml-2 inline-flex items-center gap-2 rounded-full bg-teal px-5 py-2.5 text-white hover:bg-teal-light transition-colors">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Visit Us
+      </a>
+    </nav>
+
+    <button id="menuBtn" aria-label="Open menu" aria-expanded="false" class="md:hidden text-white p-2">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <!-- mobile menu -->
+  <div id="mobileMenu" class="md:hidden hidden bg-navy-deep/98 backdrop-blur border-t border-white/10">
+    <nav class="flex flex-col px-6 py-5 gap-4 text-white/90 font-medium">
+      <a href="#mission" class="mobile-link py-1">Mission</a>
+      <a href="#pathway" class="mobile-link py-1">The Pathway</a>
+      <a href="#services" class="mobile-link py-1">Services</a>
+      <a href="#contact" class="mobile-link py-1 inline-flex items-center gap-2 text-teal-light">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Visit Us
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="relative min-h-[100svh] flex items-end overflow-hidden bg-navy-deep">
+  <div class="hero-video-wrap">
+    <video autoplay muted loop playsinline>
+      <source src="sources/videos/0722.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto w-full px-6 lg:px-10 pb-20 pt-40">
+    <p class="reveal text-teal-light font-semibold tracking-[0.25em] uppercase text-xs md:text-sm mb-6">
+      A Filipino Healthcare Initiative
+    </p>
+
+    <h1 class="reveal font-display text-white font-medium leading-[1.05] text-4xl sm:text-5xl lg:text-7xl max-w-4xl">
+      Pharmacy to Primary Health Care Services
+    </h1>
+
+    <p class="reveal font-display italic text-teal-light text-xl sm:text-2xl lg:text-3xl mt-6 max-w-2xl">
+      Transforming Pharmacies into UHC&#8209;GAMOT Facility.
+    </p>
+
+    <p class="reveal text-white/75 text-base lg:text-lg leading-relaxed max-w-2xl mt-6">
+      Helping pharmacy operators unlock new opportunities by converting their existing businesses into a UHC-GAMOT facility that delivers greater value to patients, local government units, and healthcare providers.
+    </p>
+
+    <div class="reveal flex flex-wrap items-center gap-6 mt-10">
+      <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-teal px-7 py-3.5 text-white font-semibold hover:bg-teal-light transition-colors">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Contact Us
+      </a>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ MISSION ============ -->
+<section id="mission" class="bg-white py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+    <div class="lg:col-span-5 reveal">
+      <div class="rule w-16 mb-6"></div>
+      <p class="text-teal font-semibold tracking-[0.2em] uppercase text-xs mb-4">Our Mission</p>
+      <h2 class="font-display text-navy text-3xl sm:text-4xl leading-tight mb-6">
+        Unlocking new opportunities for every Filipino pharmacy.
+      </h2>
+      <p class="text-ink/80 leading-relaxed text-base lg:text-lg">
+        MEDLINK helps pharmacy operators unlock new opportunities by converting their existing businesses into a UHC&#8209;GAMOT facility delivering greater value to patients, local government units, and healthcare providers alike.
+      </p>
+      <p class="text-ink/80 leading-relaxed text-base lg:text-lg mt-5">
+        We don&rsquo;t just help pharmacies comply. We help them evolve into vital healthcare partners that improve medicine access, strengthen local healthcare systems, and create lasting value for patients and communities.
+      </p>
+    </div>
+
+    <div class="lg:col-span-7 reveal">
+      <div class="relative rounded-2xl overflow-hidden aspect-[4/3] lg:aspect-[16/11] shadow-xl shadow-navy/10">
+        <img src="sources/images/med_2.png"
+             alt="Pharmacists reviewing operations together in a pharmacy setting"
+             class="w-full h-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 ring-1 ring-inset ring-navy/10"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIFFERENTIATOR BAND ============ -->
+<section class="bg-navy py-20 lg:py-24 relative overflow-hidden">
+  <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center reveal relative z-10">
+    <p class="font-display italic text-white text-2xl sm:text-3xl lg:text-4xl leading-snug">
+      &ldquo;We don&rsquo;t just help pharmacies comply. We help them evolve into vital healthcare partners.&rdquo;
+    </p>
+    <div class="rule w-16 mx-auto mt-8"></div>
+  </div>
+</section>
+
+<!-- ============ THE PATHWAY / SERVICES ============ -->
+<section id="pathway" class="bg-paper py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="reveal max-w-2xl mb-16">
+      <p class="text-teal font-semibold tracking-[0.2em] uppercase text-xs mb-4">The MEDLINK Pathway</p>
+      <h2 class="font-display text-navy text-3xl sm:text-4xl leading-tight">
+        From existing pharmacy to accredited primary care partner.
+      </h2>
+      <p class="text-ink/70 mt-5 leading-relaxed">
+        A structured, end-to-end engagement with each stage building the foundation for the next.
+      </p>
+    </div>
+
+    <div id="services" class="grid lg:grid-cols-12 gap-x-12 gap-y-0">
+      <div class="lg:col-span-7">
+        <ol class="relative">
+          <div class="pathway-line absolute left-[15px] top-2 bottom-2 w-px hidden sm:block"></div>
+
+          <li class="reveal relative pl-0 sm:pl-12 pb-10 flex gap-5 sm:gap-0">
+            <span class="numeral shrink-0 sm:absolute sm:left-0 sm:top-0 w-8 h-8 rounded-full bg-white border border-teal/40 text-teal flex items-center justify-center text-sm">I</span>
+            <div>
+              <h3 class="font-display text-navy text-xl mb-1.5">Feasibility &amp; readiness assessment</h3>
+              <p class="text-ink/70 leading-relaxed">Feasibility assessment and pharmacy readiness evaluation, paired with business planning and sustainability review.</p>
+            </div>
+          </li>
+
+          <li class="reveal relative pl-0 sm:pl-12 pb-10 flex gap-5 sm:gap-0">
+            <span class="numeral shrink-0 sm:absolute sm:left-0 sm:top-0 w-8 h-8 rounded-full bg-white border border-teal/40 text-teal flex items-center justify-center text-sm">II</span>
+            <div>
+              <h3 class="font-display text-navy text-xl mb-1.5">Facility planning</h3>
+              <p class="text-ink/70 leading-relaxed">Facility planning and workflow optimization designed around day-to-day pharmacy operations.</p>
+            </div>
+          </li>
+
+          <li class="reveal relative pl-0 sm:pl-12 pb-10 flex gap-5 sm:gap-0">
+            <span class="numeral shrink-0 sm:absolute sm:left-0 sm:top-0 w-8 h-8 rounded-full bg-white border border-teal/40 text-teal flex items-center justify-center text-sm">III</span>
+            <div>
+              <h3 class="font-display text-navy text-xl mb-1.5">Accreditation &amp; documentation</h3>
+              <p class="text-ink/70 leading-relaxed">Accreditation and documentary assistance with regulatory agencies, handled from start to finish.</p>
+            </div>
+          </li>
+
+          <li class="reveal relative pl-0 sm:pl-12 pb-10 flex gap-5 sm:gap-0">
+            <span class="numeral shrink-0 sm:absolute sm:left-0 sm:top-0 w-8 h-8 rounded-full bg-white border border-teal/40 text-teal flex items-center justify-center text-sm">IV</span>
+            <div>
+              <h3 class="font-display text-navy text-xl mb-1.5">Standard operating procedures</h3>
+              <p class="text-ink/70 leading-relaxed">Development of standard operating procedures (SOPs) that keep every process consistent and compliant.</p>
+            </div>
+          </li>
+
+          <li class="reveal relative pl-0 sm:pl-12 pb-10 flex gap-5 sm:gap-0">
+            <span class="numeral shrink-0 sm:absolute sm:left-0 sm:top-0 w-8 h-8 rounded-full bg-white border border-teal/40 text-teal flex items-center justify-center text-sm">V</span>
+            <div>
+              <h3 class="font-display text-navy text-xl mb-1.5">Inventory &amp; medicines planning</h3>
+              <p class="text-ink/70 leading-relaxed">Inventory management and essential medicines planning that keeps the right stock on the shelf.</p>
+            </div>
+          </li>
+
+          <li class="reveal relative pl-0 sm:pl-12 pb-10 flex gap-5 sm:gap-0">
+            <span class="numeral shrink-0 sm:absolute sm:left-0 sm:top-0 w-8 h-8 rounded-full bg-white border border-teal/40 text-teal flex items-center justify-center text-sm">VI</span>
+            <div>
+              <h3 class="font-display text-navy text-xl mb-1.5">Local health system integration</h3>
+              <p class="text-ink/70 leading-relaxed">Onboarding and integration with local health systems and Primary Care Provider Networks (PCPNs).</p>
+            </div>
+          </li>
+
+          <li class="reveal relative pl-0 sm:pl-12 flex gap-5 sm:gap-0">
+            <span class="numeral shrink-0 sm:absolute sm:left-0 sm:top-0 w-8 h-8 rounded-full bg-teal text-white flex items-center justify-center text-sm">VII</span>
+            <div>
+              <h3 class="font-display text-navy text-xl mb-1.5">Continuous technical assistance</h3>
+              <p class="text-ink/70 leading-relaxed">Ongoing technical assistance and quality improvement, so the facility keeps evolving after go-live.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="lg:col-span-5 reveal mt-14 lg:mt-0">
+        <div class="sticky top-28 space-y-6">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-xl shadow-navy/10">
+            <img src="https://images.pexels.com/photos/8657366/pexels-photo-8657366.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                 alt="A pharmacist assisting an elderly patient at the counter"
+                 class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div class="bg-navy rounded-2xl p-7">
+            <p class="text-white/90 leading-relaxed font-display italic text-lg">
+              Every stage strengthens medicine access and the local healthcare system it serves.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMUNITY IMPACT STRIP ============ -->
+<section class="bg-white py-24 lg:py-28">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-5 order-2 lg:order-1 reveal">
+      <div class="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl shadow-navy/10">
+        <img src="https://images.pexels.com/photos/19471013/pexels-photo-19471013.jpeg?auto=compress&cs=tinysrgb&w=1400"
+             alt="A pharmacist standing confidently in a well-organized pharmacy"
+             class="w-full h-full object-cover" loading="lazy" />
+      </div>
+    </div>
+    <div class="lg:col-span-7 order-1 lg:order-2 reveal">
+      <div class="rule w-16 mb-6"></div>
+      <p class="text-teal font-semibold tracking-[0.2em] uppercase text-xs mb-4">Beyond Compliance</p>
+      <h2 class="font-display text-navy text-3xl sm:text-4xl leading-tight mb-6">
+        Vital healthcare partners, not just compliant pharmacies.
+      </h2>
+      <p class="text-ink/80 leading-relaxed text-base lg:text-lg">
+        Pharmacy operators who take this path improve medicine access, strengthen the local healthcare systems around them, and create lasting value for the patients and communities they already serve.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING BANNER ============ -->
+<section id="contact" class="bg-navy-deep py-24 lg:py-32 relative overflow-hidden">
+  <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center relative z-10">
+    <h2 class="reveal font-display text-white text-3xl sm:text-4xl lg:text-5xl leading-tight">
+      Transforming Pharmacies. Expanding Access.<br class="hidden sm:block" /> Advancing Universal Health Care.
+    </h2>
+
+    <p class="reveal text-white/70 mt-6 max-w-xl mx-auto leading-relaxed">
+      Ready to bring UHC-GAMOT primary care services to your pharmacy? Let&rsquo;s talk about what your facility needs to get there.
+    </p>
+
+    <div class="reveal mt-10">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-teal hover:bg-teal-light transition-colors text-white font-semibold px-6 py-3.5 whitespace-nowrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Talk to us in MEDLINK on Facebook
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-navy-deep border-t border-white/10 py-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col sm:flex-row items-center justify-between gap-5">
+    <div class="flex items-center gap-2.5">
+      <img src="sources/images/med_logo.jpg" alt="MEDLINK Logo" class="w-6 h-6 rounded-full object-cover" />
+      <span class="font-display text-white text-lg">MEDLINK</span>
+    </div>
+    <p class="text-white/50 text-sm text-center">&copy; 2026 MEDLINK &mdash; Proudly Filipino. Advancing Universal Health Care, one pharmacy at a time.</p>
+  </div>
+</footer>
+
+<script src="sources/script.js"></script>
+</body>
+</html>
